@@ -1,5 +1,8 @@
 #include <iostream>
 #include <fstream>
+
+#include <sstream>
+#include <string>
 using namespace std;
 
 void write_love_chars(int steps) {
@@ -41,21 +44,21 @@ int main() {
     cout << "Любовь на каждом шагу" << endl;
     cout << "1. Пишем" << endl
          << "2. Получаем" << endl;
-    int set_or_get = 0;
-    cin >> set_or_get;
-
-    int steps = 0;
+    string set_or_get;
+    getline(cin, set_or_get);
+ 
+    string steps;
     cout << "Введите количество шагов: ";
-    cin >> steps;
+    getline(cin, steps);   
     cout << endl;
 
-    switch(set_or_get) {
+    switch(stoi(set_or_get)) {
         case 1: {
-                write_love_chars(steps);
+                write_love_chars(stoi(steps));
                 break;
             }
         case 2: {
-                read_love_chars(steps);
+                read_love_chars(stoi(steps));
                 break;
             }
         default: cout << "Вводи верные данные." << endl
