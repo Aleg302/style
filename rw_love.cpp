@@ -24,9 +24,12 @@ int main() {
     
     switch(set_or_get) {
         case 1: write_love_chars();
+            break;
         case 2: read_love_chars();
+            break;
         default: cout << "Вводи верные данные." << endl
                       << "Выход..." << endl;
+            break;
     }
     return 0;
 }
