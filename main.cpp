@@ -1,7 +1,7 @@
-#include "LoveRoad.h"
+#include "Emotion.h"
 
 int main () {
-    LoveRoad lr;
-    lr.brutforce();
+    Emotion e;
+    e.brutforce();
     return 0;
 }

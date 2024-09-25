@@ -1,8 +1,7 @@
-
 #include <string>
-class LoveRoad {
+class Emotion {
 public:
     void brutforce();
 private:
-    std::string emotion;
+    std::string sign;
 };
