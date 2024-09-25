@@ -6,7 +6,6 @@ using namespace std;
  
 void Emotion::brutforce()
 {
-    cout << "e";
 setlocale(LC_ALL, "en_US.UTF-8");
 wchar_t codepoint;
 for( wchar_t i = 0; i <= 0x00ff; i++ ) {
