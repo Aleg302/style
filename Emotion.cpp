@@ -1,9 +1,16 @@
 #include <iostream>
 #include "Emotion.h"
+#include <locale>
+using namespace std; 
+#include <codecvt>
+ 
+void Emotion::brutforce()
+{
+setlocale(LC_ALL, "en_US.UTF-8");
+wchar_t codepoint;
+for( wchar_t i = 0; i <= 0x00ff; i++ ) {
+    std::wcout << i << std::endl;
+}
+ 
 
-void Emotion::brutforce() {
-    std::cout << "It's working=)" << std::endl;
-    for(uint16_t sign = 0; sign <= 65535; sign++)
-        std::cout << sign << " - " << std::to_string(sign) << std::endl;
-    std::cout << "Here it's working too=)" << std::endl;
 }
