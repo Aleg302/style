@@ -1,6 +1,9 @@
-#include "BaseMenuItem.h"
+#include "BaseItem.h"
+
+#include <vector>
 
 class Process {
 public:
-    Process(const BaseMenuItem& obj);
+    typedef std::vector<std::pair<int, BaseItem>> Processes;
+    Process(Processes processes);
 };

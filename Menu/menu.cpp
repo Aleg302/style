@@ -2,9 +2,12 @@
     ЗА СТОЛОМ МОЛЧАЛИВЫЙ ДИАЛОГ
 */
 #include <iostream>
+
 #include "TemplateMenuItem.h"
+
 #include "Process.h"
 
 int main() {
-    Process process(TemplateMenuItem("TEST"));
+    Process processes({{1, TemplateMenuItem("TEST")},
+                       {2, TemplateMenuItem("TEST2")}});
 }
