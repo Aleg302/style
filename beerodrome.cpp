@@ -37,5 +37,6 @@ int main() {
     Human Oxana;
     Human Marina;
     Human Misha;
+    cout << "Class Tested Sucsessfuly!" << endl;
     return 0;
 }
